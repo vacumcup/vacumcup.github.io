@@ -5,3 +5,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  background-color: violet;
+  height: 1080px;
+}
+
+.header .container {
+  background-color: red;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+.container .left {
+  justify-content: center;
+  align-items: center;
+}
