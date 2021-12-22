@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  /* background: red; */
+  /* max-width: 1200px; */
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  background: black;
+  height: 60px;
+  width: 100%;
+}
+
+/* HEADER */
+.header {
+  background: red;
+  height: 1080px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .header-left {
+  /* background: green; */
+  height: 200px;
+  z-index: 1;
+  position: absolute;
+  margin-left: 200px;
+}
+
+.header .header-title {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 100px;
+  text-transform: uppercase;
+}
+
+.header .header-subtitle {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.header .header-right {
+}
+
+.header .header-image {
+  width: 700px;
+  height: 800px;
+  object-fit: cover;
+}
+
+/* PROCESS THUMBNAIL */
+.thumbnail {
+  background: blue;
+  height: 900px;
+  width: 100%;
+}
+
+.thumbnail ul {
+  max-width: 1200px;
+  margin: auto;
+  list-style: none;
+}
+
+.thumbnail ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* OTHER VIEW */
+.view {
+  background: red;
+  height: 900px;
+}
+
+/* VARIANT */
+.variant {
+  background: blue;
+  height: 900px;
+}
+
+/* FOOTER */
+.footer {
+  background: black;
+  height: 320px;
+}
