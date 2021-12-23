@@ -20,7 +20,7 @@ body {
 .header {
   /* background: red; */
   position: relative;
-  max-width: 1200px;
+  max-width: 320px;
   height: 800px;
   margin: auto;
 }
@@ -29,33 +29,30 @@ body {
   /* background: green; */
   position: absolute;
   z-index: 1;
-  left: 120px;
-  right: 120px;
-  bottom: 120px;
+  left: 30px;
+  bottom: 100px;
   color: white;
 }
 
 .header .title {
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 800;
-  line-height: 100px;
+  line-height: 60px;
   text-transform: uppercase;
 }
 
 .header .subtitle {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 30px;
 }
 
 .header img {
-  position: absolute;
-  height: 92%;
-  width: 92%;
-  top: 4%;
-  left: 4%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50px;
+  padding: 10px;
 }
 
 /* THUMBNAIL */
