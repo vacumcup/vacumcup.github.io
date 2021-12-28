@@ -8,23 +8,23 @@ const detailsBtn = document.querySelector(".thumbnail .item.details");
 const thumbImg = document.querySelector(".thumbnail .gallery img");
 
 modelBtn.addEventListener("click", () => {
-  console.log(modelBtn);
+  console.log("modelBtn");
   thumbImg.src = "./img/process/process1.png";
 });
 colorBtn.addEventListener("click", () => {
-  console.log(colorBtn);
+  console.log("colorBtn");
   thumbImg.src = "./img/process/process2.png";
 });
 highlightsBtn.addEventListener("click", () => {
-  console.log(highlightsBtn);
+  console.log("highlightsBtn");
   thumbImg.src = "./img/process/process3.png";
 });
 shadowBtn.addEventListener("click", () => {
-  console.log(shadowBtn);
+  console.log("shadowBtn");
   thumbImg.src = "./img/process/process4.png";
 });
 detailsBtn.addEventListener("click", () => {
-  console.log(detailsBtn);
+  console.log("detailsBtn");
   thumbImg.src = "./img/process/process5.png";
 });
 

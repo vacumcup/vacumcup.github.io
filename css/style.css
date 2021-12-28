@@ -17,8 +17,8 @@ body {
 
 /* NAVBAR */
 .navbar {
-  position: fixed;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  /* position: fixed; */
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   width: 100%;
   height: 60px;
   z-index: 999;
@@ -26,7 +26,7 @@ body {
 }
 
 .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   width: 100%;
   height: 500px;
   z-index: 999;
@@ -34,9 +34,9 @@ body {
 }
 
 .container {
-  position: relative;
   max-width: 100vw;
-  top: 60px;
+  /* position: relative; */
+  /* top: 60px; */
 }
 
 /* HEADER */
