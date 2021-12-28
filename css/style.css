@@ -48,7 +48,7 @@ body {
   width: 100%;
   height: 100%;
   /* border-radius: 30px; */
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   justify-content: center;
 }
@@ -124,7 +124,7 @@ body {
 
 /* VIEW */
 .view {
-  background: red;
+  background: #1f57aa;
   width: 100%;
   height: 600px;
 }
@@ -135,18 +135,28 @@ body {
 }
 
 .view .button span {
-  margin: 50px 10px;
+  margin: 40px 10px;
   font-size: 15pt;
+  color: white;
 }
 
 .view .button .line {
-  border: 1px solid black;
+  border: 1px solid;
   height: 20px;
+  position: relative;
+  top: 4px;
 }
 
 .view .gallery {
-  overflow-x: scroll;
-  padding: 0 30px;
+  width: calc(100% - 30px);
+  height: 450px;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
 }
 
 .view img {
@@ -155,6 +165,21 @@ body {
 
 /* VARIANT */
 .variant {
-  background: orange;
-  height: 100vh;
+  /* background: orange; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.variant .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px 40px;
+  margin: 70px 0;
+}
+
+.variant img {
+  width: 110px;
 }
