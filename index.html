@@ -4,34 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beverages</title>
+    <title>Hydro Coco</title>
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
+      <!-- NAVBAR -->
       <section class="navbar"></section>
+      <!-- HEADER -->
       <section class="header">
+        <div class="background">
+          <img src="./img/330ml-front.png" alt="" />
+        </div>
         <div class="text">
           <h1 class="title">hydro coco</h1>
           <p class="subtitle">packaging development</p>
         </div>
-        <span><img class="image" src="img/header.jpg" alt="" /></span>
       </section>
-
+      <!-- PROCESS -->
       <section class="thumbnail">
-        <nav>
-          <div class="items">
-            <span class="item active" data-name="all">All</span>
-            <span class="item" data-name="model">Model</span>
-            <span class="item" data-name="color">Color</span>
-            <span class="item" data-name="highlights">Highlights</span>
-            <span class="item" data-name="shadow">Shadow</span>
-            <span class="item" data-name="details">Details</span>
-          </div>
-        </nav>
-        <!-- IMAGES -->
         <div class="gallery">
-          <div class="image" data-name="model">
+          <div class="image active" data-name="model">
             <span><img src="img/thumb1.png" alt="" /></span>
           </div>
           <div class="image" data-name="color">
@@ -47,24 +41,18 @@
             <span><img src="img/thumb5.png" alt="" /></span>
           </div>
         </div>
+        <nav>
+          <div class="items">
+            <span class="item" data-name="model">Model</span>
+            <span class="item" data-name="color">Color</span>
+            <span class="item" data-name="highlights">Highlights</span>
+            <span class="item" data-name="shadow">Shadow</span>
+            <span class="item" data-name="details">Details</span>
+          </div>
+        </nav>
       </section>
-      <!-- 
-      <section class="view">
-        <span><img class="image" src="img/pack-water.png" alt="" /></span>
-      </section>
+      <section class="view"></section>
 
-      <section class="variant">
-        <div class="thumbs">
-          <span
-            ><img class="image" src="img/pack-water-variant.png" alt=""
-          /></span>
-          <span
-            ><img class="image" src="img/pack-water-variant.png" alt=""
-          /></span>
-        </div>
-      </section>
-
-      <section class="footer"></section> -->
       <script type="text/javascript" src="js/main.js"></script>
     </div>
   </body>

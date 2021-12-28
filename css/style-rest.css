@@ -40,3 +40,46 @@
   background: black;
   height: 300px;
 }
+
+/* PROCESS */
+.thumbnail {
+  background: red;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.thumbnail .gallery {
+  background: grey;
+  position: relative;
+  /* width: 100%; */
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.thumbnail .image {
+  background: green;
+  position: absolute;
+  height: 100%;
+}
+
+.thumbnail .image img {
+  height: 100%;
+}
+
+.thumbnail .items {
+  background: khaki;
+  position: relative;
+  /* z-index: 999; */
+}
+
+.thumbnail .item {
+  font-size: 15pt;
+  margin: 20px 0;
+  display: block;
+}

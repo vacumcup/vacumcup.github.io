@@ -2,173 +2,126 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
 }
 
 .container {
-  width: 100%;
+  max-width: 100vw;
 }
 
+/* NAVBAR */
 .navbar {
-  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  width: 100%;
   height: 60px;
+  z-index: 999;
+  backdrop-filter: blur(20px);
 }
+
 /* HEADER */
 .header {
-  /* background: red; */
   position: relative;
-  max-width: 360px;
-  height: 480px;
-  margin: auto;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .background {
+  position: absolute;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.header img {
+  position: absolute;
+  width: 35%;
+  top: 25px;
+  right: 12%;
 }
 
 .header .text {
-  /* background: green; */
   position: absolute;
-  z-index: 1;
-  left: 30px;
-  bottom: 100px;
+  bottom: 50px;
   color: white;
+  margin: 0 10%;
+  left: 0;
+  text-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
 
 .header .title {
-  font-size: 60px;
+  width: 220px;
+  font-size: 45pt;
   font-weight: 800;
   line-height: 60px;
   text-transform: uppercase;
 }
 
 .header .subtitle {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   line-height: 30px;
 }
 
-.header img {
+/* PROCESS */
+.thumbnail {
+  position: relative;
+  /* background: red; */
+  height: 70vh;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50px;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
 }
 
-/* THUMBNAIL */
-.thumbnail {
-  margin: 100px auto;
-  max-width: 1100px;
+.thumbnail span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail img {
+  /* background: greenyellow; */
+  position: absolute;
+  height: 70%;
+  transform: translate(-70px, 20px);
 }
 
 .thumbnail nav {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-nav .items {
-  display: flex;
-  max-width: 720px;
-  width: 100%;
-  justify-content: space-between;
+.thumbnail .items {
+  position: absolute;
+  transform: translateX(95px);
 }
 
-nav .items .item {
-  padding: 7px 25px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #007bff;
-  border: 2px solid #007bff;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.thumbnail .item {
+  display: block;
+  font-size: 18pt;
+  margin: 24px 0;
 }
 
-nav .items .active,
-nav .items .item:hover {
-  color: #fff;
-  background-color: #007bff;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.gallery .image {
-  padding: 7px;
-  width: calc(100% / 4);
-}
-
-.gallery .image.hide {
-  display: none;
-}
-
-.gallery .image.show {
-  animation: animate 0.2s ease;
-}
-
-@keyframes animate {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.gallery .image span {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.gallery .image img {
-  width: 100%;
-  height: calc(100% / 4);
-  vertical-align: middle;
-  object-fit: cover;
-  transition: all 0.3s ease;
-}
-
-.gallery .image:hover img {
-  transform: scale(1.15);
-}
-
-@media (max-width: 1000px) {
-  .gallery .image {
-    width: calc(100% / 3);
-  }
-}
-
-@media (max-width: 800px) {
-  .gallery .image {
-    width: calc(100% / 2);
-  }
-}
-
-@media (max-width: 700px) {
-  nav .items {
-    max-width: 600px;
-  }
-
-  nav .items .item {
-    padding: 7px 15px;
-  }
-}
-
-@media (max-width: 600px) {
-  nav .items {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  nav .items .item {
-    margin: 5px;
-  }
-
-  .gallery .image {
-    width: 100%;
-  }
+.view {
+  width: 100vw;
+  height: 100vh;
+  background: red;
 }
